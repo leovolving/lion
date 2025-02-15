@@ -1,0 +1,39 @@
+
+html, body {
+  height: 100%;
+  --padding-x: 40px;
+  --padding-y: 24px;
+  font-family: "Noto Serif", serif;
+}
+
+.heading-typography {
+  font-family: "Zain", serif;
+}
+
+body {
+  background-color: #FBFBFB;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: var(--padding-y) var(--padding-x);
+  border-bottom: 1px solid #DBDBDB;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+  flex: 1;
+}
+
+footer {
+  padding: var(--padding-y) var(--padding-x);
+  text-align: right;
+  border-top: 1px solid #DBDBDB;
+}
