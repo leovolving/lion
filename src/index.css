@@ -1,8 +1,52 @@
+html {
+  /* color variables */
+  --black: #1B1132;
+  --white: #FBFBFB;
 
-html, body {
-  height: 100%;
+  --blue-500:#004C82;
+  
+  --dark-200: #311F5B;
+  
+  --gray-200: #DBDBDB;
+
+  --lime-500: #80FF72;
+
+  --purple-600: #5B3AAE;
+
+  /* spacing variables */
   --padding-x: 40px;
   --padding-y: 24px;
+}
+
+/* themes */
+[data-theme='light'] {
+  /* backgrounds */
+  --paper: var(--white);
+
+  /* typography */
+  --primary-text-color: var(--black);
+  --primary-link-color: var(--purple-600);
+
+  /* accents */
+  --section-border-color: var(--gray-200);
+}
+
+[data-theme='dark'] {
+  /* backgrounds */
+  --paper: var(--black);
+
+  /* typography */
+  --primary-text-color: var(--white);
+  --primary-link-color: var(--lime-500);
+
+  /* accents */
+  --section-border-color: var(--dark-200);
+}
+
+
+/* root html styles */
+html, body {
+  height: 100%;
   font-family: "Noto Serif", serif;
 }
 
@@ -11,15 +55,20 @@ html, body {
 }
 
 body {
-  background-color: #FBFBFB;
+  background-color: var(--paper);
+  color: var(--primary-text-color);
   margin: 0;
   display: flex;
   flex-direction: column;
 }
 
+a {
+  color: var(--primary-link-color);
+}
+
 header {
   padding: var(--padding-y) var(--padding-x);
-  border-bottom: 1px solid #DBDBDB;
+  border-bottom: 1px solid var(--section-border-color);
 }
 
 h1 {
@@ -35,5 +84,5 @@ main {
 footer {
   padding: var(--padding-y) var(--padding-x);
   text-align: right;
-  border-top: 1px solid #DBDBDB;
+  border-top: 1px solid var(--section-border-color);
 }
