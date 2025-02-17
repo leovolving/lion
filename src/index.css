@@ -1,17 +1,75 @@
 html {
   /* color variables */
-  --black: #1B1132;
-  --white: #FBFBFB;
+  --brand-black: #1B1132;
+  --brand-white: #FBFBFB;
 
+  --black: #000000;
+  --white: #FFFFFF;
+
+  --red-700: #820500;
+  --red-300: #FDC9C6;
+
+  --yellow-700: #584400;
+  --yellow-400: #FFDF72;
+
+  --blue-10: #CFEBFF;
+  --blue-20:#9FD7FF;
+  --blue-50:#70C3FF;
+  --blue-100:#40AFFF;
+  --blue-200:#109BFF;
+  --blue-300:#0082DF;
+  --blue-400:#0066AF;
   --blue-500:#004C82;
+  --blue-600:#003860;
+  --blue-700:#002E50;
+  --blue-800:#002540;
+  --blue-900:#001320;
   
-  --dark-200: #311F5B;
+  --dark-50: #9C83D5;
+  --dark-100: #7A5AC6;
+  --dark-200: #5E3BAD;
+  --dark-300: #472D84;
+  --dark-400: #311F5B;
+  --dark-500: #1B1132;
+  --dark-600: #170F2B;
+  --dark-700: #140D25;
+  --dark-800: #110B1F;
+  --dark-900: #0D0819;
   
-  --gray-200: #DBDBDB;
+  --gray-50: #FEFEFE;
+  --gray-100: #FDFDFD;
+  --gray-200: #FCFCFC;
+  --gray-300: #DBDBDB;
+  --gray-400: #BBBBBB;
+  --gray-500: #9C9C9C;
+  --gray-600: #7D7D7D;
+  --gray-700: #5E5E5E;
+  --gray-800: #3E3E3E;
+  --gray-900: #1F1F1F;
 
+  --lime-20: #EFFFED;
+  --lime-50: #DFFFDB;
+  --lime-100: #CFFFC9;
+  --lime-200: #BFFFB8;
+  --lime-300: #AFFFA6;
+  --lime-400: #9FFF94;
   --lime-500: #80FF72;
+  --lime-600: #2CFF14;
+  --lime-700: #12B800;
+  --lime-800: #095C00;
+  --lime-900: #052E00;
 
-  --purple-600: #5B3AAE;
+  --purple-50: #C7BAE8;
+  --purple-100: #B5A3E0;
+  --purple-200: #A28CD9;
+  --purple-300: #8F75D1;
+  --purple-400: #7D5EC9;
+  --purple-500: #6846C1;
+  --purple-500: #6846C1;
+  --purple-600: #4E3295;
+  --purple-700: #342163;
+  --purple-800: #1A1132;
+  --purple-900: #0D0819;
 
   /* spacing variables */
   --padding-x: 40px;
@@ -21,22 +79,22 @@ html {
 /* themes */
 [data-theme='light'] {
   /* backgrounds */
-  --paper: var(--white);
+  --paper: var(--brand-white);
 
   /* typography */
-  --primary-text-color: var(--black);
+  --primary-text-color: var(--brand-black);
   --primary-link-color: var(--purple-600);
 
   /* accents */
-  --section-border-color: var(--gray-200);
+  --section-border-color: var(--gray-300);
 }
 
 [data-theme='dark'] {
   /* backgrounds */
-  --paper: var(--black);
+  --paper: var(--brand-black);
 
   /* typography */
-  --primary-text-color: var(--white);
+  --primary-text-color: var(--brand-white);
   --primary-link-color: var(--lime-500);
 
   /* accents */
