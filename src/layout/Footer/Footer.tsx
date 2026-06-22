@@ -1,12 +1,14 @@
 import { createPortal } from 'react-dom'
 
+import { Link } from '@/_ds/Link'
+
 const FooterChildren = () => (
   <>
     <span>
       Vectors and icons by{' '}
-      <a href="https://www.svgrepo.com" target="_blank">
+      <Link href="https://www.svgrepo.com" target="_blank">
         SVG Repo
-      </a>
+      </Link>
     </span>
     <span>&copy; 2026 Leo Yockey</span>
   </>

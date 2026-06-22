@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
-import { BrowserRouter, NavLink } from 'react-router'
+import { BrowserRouter } from 'react-router'
 
 import { Button } from '@/_ds/Button'
+import { Link } from '@/_ds/Link'
 import { Moon, Sun } from './_ds/Icon'
 
 import { Footer } from '@/layout'
@@ -36,7 +37,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <nav>
-        <NavLink to="/">Home</NavLink> <NavLink to="/about">About</NavLink>
+        <Link to="/">Home</Link> <Link to="/about">About</Link>
       </nav>
       <p>Current theme: {theme}</p>
       <Button onClick={updateTheme}>
