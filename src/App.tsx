@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react'
 import { BrowserRouter, NavLink } from 'react-router'
 
 import { Button } from '@/_ds/Button'
+import { Moon, Sun } from './_ds/Icon'
+
+import { Footer } from '@/layout'
 
 import PageRoutes from './PageRoutes'
 import './App.css'
@@ -13,6 +16,7 @@ const THEMES = {
 
 const App = () => {
   const [theme, setTheme] = useState(THEMES.DARK)
+  const isDarkMode = theme === THEMES.DARK
 
   const setThemeAttribute = (newTheme: string): void => {
     document.body.setAttribute('data-theme', newTheme)
@@ -35,8 +39,11 @@ const App = () => {
         <NavLink to="/">Home</NavLink> <NavLink to="/about">About</NavLink>
       </nav>
       <p>Current theme: {theme}</p>
-      <Button onClick={updateTheme}>toggle theme</Button>
+      <Button onClick={updateTheme}>
+        {isDarkMode ? <Moon /> : <Sun />} Toggle theme
+      </Button>
       <PageRoutes />
+      <Footer />
     </BrowserRouter>
   )
 }

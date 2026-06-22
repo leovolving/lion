@@ -141,6 +141,7 @@ main {
 
 footer {
   padding: var(--padding-y) var(--padding-x);
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
   border-top: 1px solid var(--section-border-color);
 }
